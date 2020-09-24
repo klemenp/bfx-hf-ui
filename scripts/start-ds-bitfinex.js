@@ -12,11 +12,12 @@ const { schema: HFDBBitfinexSchema } = require('bfx-hf-ext-plugin-bitfinex')
 const dir = `${os.homedir()}/.honeyframework`;
 
 const dbBitfinex = new HFDB({
-  schema: HFDBBitfinexSchema,
-  adapter: HFDBLowDBAdapter({
-    dbPath: `${os.homedir()}/.honeyframework/hf-bitfinex.json`,
-  }),
-})
+                         schema: HFDBBitfinexSchema,
+                         adapter: HFDBSQLAdapter({
+                           connection: 'postgres://hfdataserver:hfdataserver@localhost:5432/hfdataserver',
+                           clientType: 'pg'
+                         })
+                       })
 
 const dsBitfinex = new DataServer({
   port: 23521,
