@@ -171,6 +171,7 @@
     "bfx-api-node-models": "^1.2.4",
     "bfx-api-node-util": "^1.0.8",
     "bfx-hf-algo": "github:bitfinexcom/bfx-hf-algo#master",
+    "bfx-hf-models-adapter-sql": "github:klemenp/bfx-hf-models-adapter-sql#master",
     "bfx-hf-backtest": "^1.0.3",
     "bfx-hf-chart": "^1.0.0",
     "bfx-hf-data-server": "^1.4.0",
