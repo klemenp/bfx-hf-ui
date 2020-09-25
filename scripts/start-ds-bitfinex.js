@@ -14,7 +14,7 @@ const dir = `${os.homedir()}/.honeyframework`;
 const dbBitfinex = new HFDB({
                          schema: HFDBBitfinexSchema,
                          adapter: HFDBSQLAdapter({
-                           connection: 'postgres://hfdataserver:hfdataserver@localhost:5432/hfdataserver',
+                           connection: 'postgres://hfdataserver:hfdataserver@postgres:5432/hfdataserver',
                            clientType: 'pg'
                          })
                        })
